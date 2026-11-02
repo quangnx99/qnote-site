@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Privacy policy — qnote</title>
+    <meta name="description" content="How qnote handles your notes and the data of the cloud services you connect." />
+    <link rel="icon" href="icon.png" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="wrap">
+      <header class="nav">
+        <a class="brand" href="./"><img src="icon.png" alt="" />qnote</a>
+        <nav><a href="./#sync">Sync</a><a href="privacy.html">Privacy</a></nav>
+      </header>
+
+      <main class="doc">
+        <h1>Privacy policy</h1>
+        <p class="meta">Effective October 31, 2026</p>
+
+        <p>qnote is a desktop application for writing Markdown notes. This policy explains what data qnote handles, what it accesses in the cloud services you choose to connect, and the choices you have.</p>
+
+        <div class="callout"><b>In short:</b> your notes stay on your computer, and in cloud storage you choose only if you turn on sync. qnote has no server, collects no analytics, and never sells or shares your data.</div>
+
+        <h2>1. Your notes</h2>
+        <p>Notes are files in a folder you choose on your computer (a “vault”). qnote reads and writes those files on your device only. The developer of qnote never receives them.</p>
+
+        <h2>2. Sync</h2>
+        <p>Sync is optional and off by default. When you turn it on, qnote copies your vault to a destination you choose, and copies back the changes made on your other computers:</p>
+        <ul>
+          <li><b>A folder</b> on your computer or network, for example one kept in sync by a cloud desktop client, a USB drive or a network share. qnote only reads and writes files in that folder.</li>
+          <li><b>A cloud service you connect</b> with your own account. Data moves directly between your computer and that service over encrypted HTTPS connections. There is no qnote server in between.</li>
+        </ul>
+        <p>Files stored with a cloud service are also subject to that service’s own privacy policy. Each supported cloud service is described below, with exactly what qnote accesses. A new service is added to this page before qnote supports it.</p>
+
+        <h2>3. Google Drive</h2>
+        <p>If you click <b>Connect</b> for Google Drive, you sign in with Google and grant qnote one permission:</p>
+        <ul>
+          <li><b>See, edit, create and delete only the specific Google Drive files you use with this app</b> (scope <code>https://www.googleapis.com/auth/drive.file</code>). qnote can access only the files and folders it creates. It cannot see your other Drive files.</li>
+        </ul>
+        <p>Through that permission, qnote handles:</p>
+        <ul>
+          <li>the notes and attachments of the vault you sync, plus their names, folders, sizes, modification times and checksums;</li>
+          <li>the email address of your Google account, which is shown in qnote so you know which account is connected.</li>
+        </ul>
+        <p>qnote uses this data only to sync your vault: it uploads your notes to a folder in your Drive (for example <code>qnote/My vault</code>), downloads changes made on your other computers, and moves deleted files to your Drive trash. qnote does not use Google data for advertising, profiling or training AI models, and does not use it for any purpose other than providing sync to you.</p>
+        <p>qnote’s use and transfer to any other app of information received from Google APIs will adhere to the <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>, including the Limited Use requirements.</p>
+
+        <h2>4. Storage and security</h2>
+        <ul>
+          <li>Sign-in tokens for connected cloud services are stored on your computer, encrypted with your operating system’s secure storage. Short-lived access tokens are kept only in memory.</li>
+          <li>To merge edits, qnote keeps sync state (file checksums and the last synced copy of text notes) in its application data folder on your computer.</li>
+        </ul>
+
+        <h2>5. Sharing</h2>
+        <p>qnote does not sell, rent, transfer or share your data with anyone. The developer has no access to your notes, your cloud storage or your tokens.</p>
+
+        <h2>6. Analytics and tracking</h2>
+        <p>qnote contains no analytics, telemetry, advertising or tracking code.</p>
+
+        <h2>7. Your choices and deleting your data</h2>
+        <ul>
+          <li><b>Stop syncing or disconnect:</b> in qnote, click the cloud icon, then <i>Stop syncing</i> or <i>Disconnect</i>. Disconnecting deletes the stored token from your computer and revokes it with the service.</li>
+          <li><b>Revoke access from Google:</b> remove qnote at <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a>.</li>
+          <li><b>Delete synced files:</b> delete the qnote folder in your cloud storage or sync folder.</li>
+          <li><b>Delete local data:</b> delete your vault folder, and uninstall qnote to remove its application data.</li>
+        </ul>
+
+        <h2>8. Children</h2>
+        <p>qnote is not directed to children under 13 and does not knowingly collect their data.</p>
+
+        <h2>9. Changes</h2>
+        <p>If this policy changes, the new version will be published on this page with a new effective date.</p>
+
+        <h2>10. Contact</h2>
+        <p>Questions about this policy: <a href="mailto:adquang199x@gmail.com">adquang199x@gmail.com</a>.</p>
+      </main>
+
+      <footer>
+        <span>© 2026 qnote</span>
+        <span><a href="./">Home</a></span>
+      </footer>
+    </div>
+  </body>
+</html>
